@@ -1,0 +1,9 @@
+.div{
+width: 35px;
+height:35px;
+}
+.ad{
+    max-width: 200%;
+    height:auto;
+    background-position: center;
+}

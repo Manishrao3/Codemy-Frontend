@@ -1,0 +1,25 @@
+<div *ngIf="message" class="alert alert-success" role="alert">
+  Course Added!
+</div>
+
+<form [formGroup]="addStudent" (ngSubmit)="SaveData()">
+    <!-- <div class="mb-3">
+        <label class="form-label">ID</label>
+        <input type="text" class="form-control" placeholder="Enter Student Id">
+    </div> -->
+    
+    <div class="mb-3">
+      <label class="form-label">CName</label>
+      <input type="text" class="form-control" placeholder="Enter CName" formControlName="name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">CDuration</label>
+        <input type="number" class="form-control" placeholder="Enter CDuration" formControlName="duration">
+      </div>
+    <div class="mb-3">
+      <label class="form-label">CFee</label>
+      <input type="text" class="form-control" placeholder="Enter CFee" formControlName="fee">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+  </form>
